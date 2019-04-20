@@ -1,0 +1,36 @@
+<div class="page">
+    <div class="header blue">
+
+        <button class="left icon ion-arrow-left-c" onclick="backPage()"></button>
+        <h1>Lista de Pessoas</h1>
+    </div>
+
+    <div class="content has-header">
+
+        <div class="list" id="li">
+            <div class="item" data="users">
+
+                <div class="row padding indigo">
+                    <div class="col-25 padding" id="picture">
+                            <img class='avatar circle' src='${foto}' alt='' id='image'>
+                           <button class="ion ion-camera" id="" onclick='getPic($$index)'></button>
+                    </div>
+                    <div class="col padding">
+                        <h1 class="text-big text-light">${nome}</h1>
+                        <p class="text-blue-200" style="word-wrap: break-word;">${email}</p>
+                        <p class="text-blue-200">${telefone}</p> 
+                        <img type="text" id="" class="hidden">
+                    </div>
+                    <div class="left">
+                            <button class="icon ion-trash-b red" onclick="deletar($$index)"></button>
+                            <button class="icon ion-edit blue" onclick="update($$index)"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+        </div>
+
+        
+    </div>
+
+</div>
